@@ -5,9 +5,9 @@ LD_FLAGS 	=
 
 PROGS		= main
 
-SOURCES		= src/utictactoe.c 
+SOURCES		= utictactoe.c 
 
-HEADERS		= src/utictactoe.h 
+HEADERS		= utictactoe.h ../include/common.h ../include/model.h
 
 DEPFILE		= .depend
 
@@ -39,3 +39,6 @@ $(DEPFILE): $(SOURCES)
 
 clean:
 	rm -f *~ $(SOURCES:.c=.o) $(PROGS)
+
+help:
+	@fgrep
